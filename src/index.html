@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,shrink-to-fit=no" name="viewport">
+    <title>阿琛的简历</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style id="style"> </style>
+    <div id="html"></div>
+    <div id="div1wrapper">
+        <div id="div1"></div>
+    </div>
+    
+    <style>
+        #html {
+            word-break: break-all;
+            overflow: auto;
+        }
+
+        #div1{
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+
+        #div1::before {
+            content: '';
+            display: block;
+            position: absolute;
+        }
+
+        #div1::after {
+            content: '';
+            display: block;
+            position: absolute;
+        }
+
+        @media(max-width:500px) {
+            #html{
+                height:50vh;
+            }
+            #div1wrapper{
+                height:50vh;
+                
+            }
+            #div1{
+                position: relative;
+                top:50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+            }
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+
+</html>
