@@ -6,5 +6,43 @@
 *::after,*::before{
     box-sizing: border-box;
 }
+#html {
+    word-break: break-all;
+    overflow: auto;
+}
+
+#div1{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+#div1::before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+#div1::after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+@media(max-width:500px) {
+    #html{
+        height:50vh;
+    }
+    #div1wrapper{
+        height:50vh;
+        
+    }
+    #div1{
+        position: relative;
+        top:50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+    }
+}
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
